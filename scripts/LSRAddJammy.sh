@@ -1,14 +1,7 @@
 #! /bin/bash
 
-
-echo "Creating Working Directory"
 printf "%*s" $COLUMNS |tr " " "="
-sleep 7
-
-mkdir ~/scripts
-cd ~/scripts
-echo "Changing Ownership Of Working Directory to $USER"
-sleep 7
+echo "Starting Script"
 
 printf "%*s" $COLUMNS |tr " " "="
 sudo chown -R $USER ~/scripts
@@ -20,5 +13,6 @@ sudo echo -e "deb http://ubuntu.nxaclan.com/ubuntu jammy main restricted univers
 printf "%*s" $COLUMNS |tr " " "="
 sleep 7
 
-echo "ALL DONE, Thank You $USER for using my repo install-script/packages-repo This Script was made by Wildflower0424 <lstotler8166@hotmail.com>"
+echo "ALL DONE, Thank You $USER for using my repo install-script/packages-repo, This Script was made by Wildflower0424 <lstotler8166@hotmail.com>"
 echo "$USER, Please Have A Great rest of your day!"
+printf "%*s" $COLUMNS |tr " " "="
